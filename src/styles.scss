@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import "tailwindcss";
+
+@theme{
+    --font-sans: InterVariable, sans-serif;
+    --color-primary-green: #122b1e;
+    --color-primary-yellow: #dccb58;
+    --color-olive-green: #635f25;
+    --color-olive: #12491e
+}
+
+.nav-tab-active{
+    @apply rounded-md bg-olive px-3 py-2 text-sm font-medium text-primary-yellow
+}
+
+.nav-tab-inactive {
+    @apply rounded-md px-3 py-2 text-sm font-medium text-primary-yellow hover:bg-olive
+}
+
+.logo {
+
+}
