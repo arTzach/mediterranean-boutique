@@ -8,9 +8,5 @@ import {Component, signal} from '@angular/core';
   styles: ``
 })
 export class AboutUsComponent {
-  isOpen = signal(false);
 
-  toggleMenu() {
-    this.isOpen.update((state) => !state);
-  }
 }
