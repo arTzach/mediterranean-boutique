@@ -1,1 +1,0 @@
-import{Da as o,Ea as a,Ha as c,ua as n}from"./chunk-IPJ7YPWT.js";var s=class e{static \u0275fac=function(t){return new(t||e)};static \u0275cmp=n({type:e,selectors:[["app-contact-us"]],decls:2,vars:0,template:function(t,i){t&1&&(o(0,"p"),c(1,"contact-us works!"),a())},encapsulation:2})};export{s as ContactUsComponent};
