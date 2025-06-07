@@ -1,8 +1,8 @@
 
 <nav class="header-nav-bar w-full bg-primary-green flex">
   <!-- Mobile menu button -->
-  <div class="flex items-center md:hidden">
-    <button (click)="toggleMenu()" class="text-custom-gold focus:outline-none">
+  <div class="flex items-center mx-2 md:hidden">
+    <button (click)="toggleMenu()" class="text-primary-yellow focus:outline-none">
       <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path [attr.d]="isOpen() ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
       </svg>
@@ -12,30 +12,36 @@
     <div class="flex space-x-2 text-custom-gold nav-tabs items-center justify-center">
       <div class="left-side-header justify-items-end pt-10 pr-3 hidden lg:block">
         <a routerLink="/home" [ngClass]="(isActivePage('/home') ? 'nav-tab-active underline' : 'nav-tab-inactive')">Home</a>
-        <a routerLink="/olive-oil" class="decoration-[#fffff]" [ngClass]="isActivePage('/olive-oil') ? 'nav-tab-active underline' : 'nav-tab-inactive'">Olive Oil</a>
+        <a routerLink="/olive-oil" class="decoration-[#fffff]" [ngClass]="isActivePage('/olive-oil') ? 'nav-tab-active' : 'nav-tab-inactive'">Olive Oil</a>
       </div>
       <div>
-        <img src="img/logo.png" alt="logo image" class="logo object-cover h-20">
+        <img ngSrc="img/logo.webp" height="80" width="80" alt="logo image" class="logo object-cover h-20">
       </div>
       <div class="right-side-header pt-10 pl-3 hidden lg:block">
         <div class="justify-items-start">
-          <a routerLink="/about-us" [ngClass]="isActivePage('/about-us') ? 'nav-tab-active underline' : 'nav-tab-inactive'">About Us</a>
-          <a routerLink="/contact-us" [ngClass]="isActivePage('/contact-us') ? 'nav-tab-active underline' : 'nav-tab-inactive'">Contact Us</a>
+          <a routerLink="/about-us" [ngClass]="isActivePage('/about-us') ? 'nav-tab-active' : 'nav-tab-inactive'">About Us</a>
+          <a routerLink="/contact-us" [ngClass]="isActivePage('/contact-us') ? 'nav-tab-active' : 'nav-tab-inactive'">Contact Us</a>
         </div>
       </div>
     </div>
   </div>
 </nav>
+<div class="container w-full p-0m-0">
 <!-- Mobile dropdown menu -->
-@if(isOpen()){
-  <div class="md:hidden mx-auto flex bg-primary-green justify-between">
-    <a routerLink="/home" [ngClass]="(isActivePage('/home') ? 'nav-tab-active underline' : 'nav-tab-inactive')">Home</a>
-    <a routerLink="/olive-oil" class="decoration-[#fffff]" [ngClass]="isActivePage('/olive-oil') ? 'nav-tab-active underline text-custom-gold' : 'nav-tab-inactive'">Olive Oil</a>
-    <a routerLink="/about-us" [ngClass]="isActivePage('/about-us') ? 'nav-tab-active underline' : 'nav-tab-inactive'">About Us</a>
-    <a routerLink="/contact-us" [ngClass]="isActivePage('/contact-us') ? 'nav-tab-active underline' : 'nav-tab-inactive'">Contact Us</a>
-  </div>
-}
-<div class="container w-full p-0 m-0">
+  @if(isOpen()){
+    <div class="md:hidden w-full bg-primary-green">
+      <div>
+        <a routerLink="/home" [ngClass]="(isActivePage('/home') ? 'nav-tab-active underline' : 'nav-tab-inactive')">Home</a>
+      </div>
+      <div>
+        <a routerLink="/olive-oil" class="decoration-[#fffff]" [ngClass]="isActivePage('/olive-oil') ? 'nav-tab-active' : 'nav-tab-inactive'">Olive Oil</a>
+      </div>
+      <div>
+        <a routerLink="/about-us" [ngClass]="isActivePage('/about-us') ? 'nav-tab-active' : 'nav-tab-inactive'">About Us</a>
+      </div>
+      <div><a routerLink="/contact-us" [ngClass]="isActivePage('/contact-us') ? 'nav-tab-active' : 'nav-tab-inactive'">Contact Us</a></div>
+    </div>
+  }
   <router-outlet />
 </div>
 <div class="footer">

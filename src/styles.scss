@@ -10,13 +10,17 @@
 }
 
 .nav-tab-active{
-    @apply rounded-md bg-olive px-3 py-2 text-sm font-medium text-primary-yellow
+    @apply rounded-md bg-olive p-3 text-sm font-medium text-primary-yellow
 }
 
 .nav-tab-inactive {
-    @apply rounded-md px-3 py-2 text-sm font-medium text-primary-yellow hover:bg-olive
+    @apply rounded-md p-3 text-sm font-medium text-primary-yellow hover:bg-olive
 }
 
 .logo {
 
+}
+
+button {
+  cursor: pointer;
 }
