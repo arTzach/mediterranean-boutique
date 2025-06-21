@@ -1,6 +1,8 @@
-import {Component, input} from '@angular/core';
+import {Component, inject, input} from '@angular/core';
 import {ShopCardItem} from './shop-card-item';
 import {NgOptimizedImage} from '@angular/common';
+import {Store} from '@ngrx/store';
+import {CartActions} from '../actions/cart.actions';
 
 @Component({
   selector: 'app-shop-cards-item',
@@ -12,5 +14,10 @@ import {NgOptimizedImage} from '@angular/common';
 })
 export class ShopCardsItemComponent {
   item = input.required<ShopCardItem>();
-
+  isCartEnabled = input.required<boolean>();
+  private store = inject(Store);
+  addToCart(id: string) {
+    console.log('addToCart: ', id);
+    this.store.dispatch(CartActions.addToCart({id}));
+  }
 }
