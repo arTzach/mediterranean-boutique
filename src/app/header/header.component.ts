@@ -1,10 +1,10 @@
 import {Component, inject, input, output, signal} from '@angular/core';
 import {NgClass} from '@angular/common';
-import {TranslatePipe, TranslateService} from '@ngx-translate/core';
+import {TranslateService} from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
-  imports: [NgClass, TranslatePipe],
+  imports: [NgClass],
   templateUrl: './header.component.html',
   styles: ``
 })
@@ -29,5 +29,10 @@ export class HeaderComponent {
 
   changeLang() {
     this.translate.use(this.translate.currentLang === 'en' ? 'dk' : 'en');
+  }
+
+  navigateTo(id: string) {
+    this.isOpen.set(false);
+    this.scrollToElement.emit(id);
   }
 }

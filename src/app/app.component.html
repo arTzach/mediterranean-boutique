@@ -1,27 +1,24 @@
-<app-header
-  [activeComponent]="activeComponent"
-  (scrollToElement)="scrollToElement($event)"
-/>
 
-<div class="container w-full m-0">
+
+<div class="min-h-screen">
 <!-- Mobile dropdown menu -->
-
-  <div class="w-full m-auto">
-    <section id="home">
+    <app-header
+      [activeComponent]="activeComponent"
+      (scrollToElement)="scrollToElement($event)"
+    />
+    <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
       <app-home/>
     </section>
-    <section id="olive-oil">
+    <section id="olive-oil" class="py-20 bg-cream">
       <app-olive-oil/>
     </section>
-    <section id="about-us">
+    <section id="about-us" class="py-20 bg-white">
       <app-about-us/>
     </section>
-    <section id="contact-us">
+    <section id="contact-us" class="relative min-h-screen flex items-center justify-center overflow-hidden">
       <app-contact-us/>
     </section>
   </div>
-
-</div>
 <div class="footer">
 
 </div>

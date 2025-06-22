@@ -1,23 +1,20 @@
-
-<div class="flex justify-center">
-  <img ngSrc="img/olive-tree.webp" width="600" height="600" alt="Collecting olives" class="" priority/>
-</div>
-<h2 class="text-center">Welcome to Mediterranean Boutique</h2>
-<div class="md:flex">
-  <div class="md:shrink-0">
-    <div class="p-8">
-      <p class="mt-2 ">
-          {{'home.p0' | translate}}
-      </p>
-      <p class="mt-2 ">
-        {{'home.p1' | translate}}
-      </p>
-      <p class="mt-2 ">
-        {{'home.p2' | translate}}
-      </p>
-      <p class="mt-2">
-        {{'home.p3' | translate}}
-      </p>
-    </div>
-  </div>
+<div class="absolute inset-0 bg-cover bg-center bg-no-repeat pb-5R" [style]="{'backgroundImage': bgImage}"></div>
+<div class="absolute inset-0 bg-black/30 mx-0 my-0 px-0"></div>
+<div class="relative z-10 text-center text-white/90 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+  <h1 class="text-5xl md:text-7xl font-playfair font-bold mb-6 animate-fade-in">
+    Welcome to Mediterranean Boutique
+    <span class="block text-gold"></span>
+  </h1>
+  <p class="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed opacity-90 text-gold">
+    {{'home.p0' | translate}}
+  </p>
+  <p class="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed opacity-90">
+    {{'home.p1' | translate}}
+  </p>
+  <p class="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed opacity-90">
+    {{'home.p2' | translate}}
+  </p>
+  <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed opacity-90">
+    {{'home.p3' | translate}}
+  </p>
 </div>

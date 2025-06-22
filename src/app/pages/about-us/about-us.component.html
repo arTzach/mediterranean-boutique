@@ -1,28 +1,40 @@
 <!-- header.component.html -->
-<nav class="bg-white shadow-md px-4 py-2">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+    <div class="order-2 lg:order-1">
+      <div class="space-y-6 text-lg text-gray-700 leading-relaxed">
+        <p>
+          {{'about-us.p0' | translate}}
+        </p>
+        <p>
+          {{'about-us.p1' | translate}}
+        </p>
+        <p>
+          {{'about-us.p2' | translate}}
+        </p>
+        <p>
+          {{'about-us.p3' | translate}}
+        </p>
+        <p>
+          {{'about-us.p4' | translate}}
+        </p>
+      </div>
+    </div>
+    <div class="order-1 lg:order-2">
+      <div class="relative">
+        <img ngSrc="img/olive-branch.webp"
+             width="600" height="600" alt="About us image"
+             class="rounded-2xl shadow-xl w-full sm:h96 md:h-145 object-cover"
+             priority/>
+        <div class="absolute inset-0 rounded-2xl bg-gradient-to-t from-olive-dark/20 to-transparent"></div>
+      </div>
+    </div>
+  </div>
+</div>
 <div class="flex mt-2 ml-2">
     <div class="wrapper sm:flex items-center">
-        <div class="sm:w-full">
-          <img ngSrc="img/olive-branch.webp" width="400" height="400" alt="About us image" priority/>
-        </div>
-        <div class="m-2">
-          <p>
-          {{'about-us.p0' | translate}}
-          </p>
-          <p class="mt-2">
-            {{'about-us.p1' | translate}}
-          </p>
-          <p class="mt-2">
-            {{'about-us.p2' | translate}}
-          </p>
-          <p>
-            {{'about-us.p3' | translate}}
-          </p>
-          <p class="mt-2">
-            {{'about-us.p4' | translate}}
-          </p>
-        </div>
-    </div>
 
+
+    </div>
 </div>
-</nav>
+

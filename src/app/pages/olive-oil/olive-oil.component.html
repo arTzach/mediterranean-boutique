@@ -1,16 +1,21 @@
-<h2 class="text-2xl font-bold tracking-tight text-gray-900">Olive Oil Products</h2>
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="text-center mb-16">
+    <h2 class="text-4xl md:text-5xl font-playfair font-bold text-olive mb-6">Olive Oil Products</h2>
+    <p class="text-xl text-olive-medium max-w-3xl mx-auto">
 
-  <div class="bg-white">
+    </p>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+    @for(item of shopItems; track item.id){
+      <app-shop-cards-item
+        [item]="item"
+        [isCartEnabled]="true"
+      />
+    }
+  </div>
+</div>
+  <div class="bg-cream">
     <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-
-      <div class="mt-6 grid sm:grid-cols-4 md:grid-cols-3 gap-x-6 xl:gap-x-8">
-        @for(item of shopItems; track item.id){
-          <app-shop-cards-item
-            [item]="item"
-            [isCartEnabled]="true"
-          />
-        }
-      </div>
 
     </div>
   </div>

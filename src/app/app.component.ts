@@ -28,10 +28,11 @@ export class AppComponent implements AfterViewInit {
   ngAfterViewInit(): void {
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
+          console.log(entry);
           if (entry.isIntersecting) {
             this.activeComponent = entry.target.id;
           }
-        }, {threshold: 1});
+        }, {threshold: 0.05});
       })
       document.querySelectorAll("section").forEach((el) => {
         observer.observe(el);
@@ -39,15 +40,11 @@ export class AppComponent implements AfterViewInit {
 
     }
 
-  isActivePage(route: string): boolean {
-    return this.activeComponent === route;
-  }
-
   scrollToElement(id: string){
     const element = document.getElementById(id);
     this.activeComponent = id;
     if(element){
-      element.scrollIntoView({behavior: 'smooth', block: 'end'});
+      element.scrollIntoView({behavior: 'smooth', block: 'start'});
     }
   }
 }
