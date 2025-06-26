@@ -17,7 +17,6 @@ export class ShopCardsItemComponent {
   isCartEnabled = input.required<boolean>();
   private store = inject(Store);
   addToCart(id: string) {
-    console.log('addToCart: ', id);
     this.store.dispatch(CartActions.addToCart({id}));
   }
 }

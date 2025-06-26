@@ -8,8 +8,6 @@ export const initialState: {[id: string]: ShopCardState} = {};
 export const cartReducer = createReducer(
   initialState,
   on(CartActions.addToCart, (_state, { id }) => {
-      console.log('addToCart: ', id);
-      console.log('state: ', _state);
       const item = _state[id];
       const updatedItem: ShopCardState =  item ? { ...item, quantity: item.quantity + 1 }
         : { id, quantity: 1, name: 'Product', info: '', year: 2022, price: '', status: ''};

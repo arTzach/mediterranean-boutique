@@ -31,10 +31,18 @@ export class AppComponent implements AfterViewInit {
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
-            this.activeComponent = entry.target.id;
+            this.activeComponent = entry.target.id.split('_')[0];
           }
-        }, {threshold: 0.01});
-      })
+        });
+      }, { threshold: 1});
+      [
+        'home_obs', 'olive-oil_obs', 'about-us_obs', 'health_obs', 'contact-us_obs',
+      ].forEach(id => {
+        const el = document.getElementById(id);
+        if ( el ) {
+          observer.observe(el);
+        }
+    })
       document.querySelectorAll("section").forEach((el) => {
         observer.observe(el);
       })

@@ -20,7 +20,6 @@ export class ConfigService {
   }
 
   loadConfig(): Promise<void> {
-    console.log("load config...");
     return firstValueFrom(
       this.httpClient.get<Config>('config.json').pipe(tap((res: any) => {
         this.config = res;
