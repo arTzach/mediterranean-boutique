@@ -17,6 +17,7 @@ export class HeaderComponent {
     { name: 'Home', href: '#home', id: 'home' },
     { name: 'Olive Oil', href: '#olive-oil', id: 'olive-oil' },
     { name: 'About Us', href: '#about-us', id: 'about-us' },
+    { name: 'Health Care', href: '#health', id: 'health' },
     { name: 'Contact Us', href: '#contact-us', id: 'contact-us' },
   ];
 

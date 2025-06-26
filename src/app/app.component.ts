@@ -6,10 +6,12 @@ import {ContactUsComponent} from './pages/contact-us/contact-us.component';
 import {TranslateService} from '@ngx-translate/core';
 import {ConfigService} from './config/config.service';
 import {HeaderComponent} from './header/header.component';
+import {HealthComponent} from './pages/health/health.component';
+import {LazyHostComponent} from './shared/lazy-host/lazy-host.component';
 
 @Component({
   selector: 'app-root',
-  imports: [HomeComponent, OliveOilComponent, AboutUsComponent, ContactUsComponent, HeaderComponent],
+  imports: [HomeComponent, ContactUsComponent, HeaderComponent, LazyHostComponent],
   templateUrl: './app.component.html',
   standalone: true,
   styles: '',
@@ -28,11 +30,10 @@ export class AppComponent implements AfterViewInit {
   ngAfterViewInit(): void {
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
-          console.log(entry);
           if (entry.isIntersecting) {
             this.activeComponent = entry.target.id;
           }
-        }, {threshold: 0.05});
+        }, {threshold: 0.01});
       })
       document.querySelectorAll("section").forEach((el) => {
         observer.observe(el);
@@ -47,4 +48,8 @@ export class AppComponent implements AfterViewInit {
       element.scrollIntoView({behavior: 'smooth', block: 'start'});
     }
   }
+
+  protected readonly HealthComponent = HealthComponent;
+  protected readonly AboutUsComponent = AboutUsComponent;
+  protected readonly OliveOilComponent = OliveOilComponent;
 }

@@ -10,14 +10,18 @@
       <app-home/>
     </section>
     <section id="olive-oil" class="py-20 bg-cream">
-      <app-olive-oil/>
+      <app-lazy-host [component]="OliveOilComponent"></app-lazy-host>
     </section>
     <section id="about-us" class="py-20 bg-white">
-      <app-about-us/>
+      <app-lazy-host [component]="AboutUsComponent"></app-lazy-host>
+    </section>
+    <section id="health" class="py-20 bg-cream-light/20">
+      <app-lazy-host [component]="HealthComponent"></app-lazy-host>
     </section>
     <section id="contact-us" class="relative min-h-screen flex items-center justify-center overflow-hidden">
       <app-contact-us/>
     </section>
+
   </div>
 <div class="footer">
 

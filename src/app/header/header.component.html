@@ -5,26 +5,39 @@
             <h1 class="text-2xl font-playfair font-bold text-primary-yellow">
               Mediterranean Boutique
             </h1>
+
             </div>
+            <span class="flex md:hidden mx-auto">
+                  <div (click)="changeLang()" ngClass="text-primary-yellow inactive m-auto cursor-pointer">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                      <g stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M2 12h20"/>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z"/>
+                      </g>
+                    </svg>
+                  </div>
+              </span>
             <!--   Desktop Menu     -->
             <div class="hidden md:block">
-            <div class="ml-10 flex items-baseline space-x-8">
-                @for(item of menuItems; track item.id){
-                    <a href="javascript:;" (click)="scrollToElement.emit(item.id)" [ngClass]="(isActivePage(item.id) ? 'nav-tab-active underline' : 'nav-tab-inactive')">
-                      {{item.name}}
-                    </a>
-                }
-                <div (click)="changeLang()" ngClass="text-primary-yellow inactive m-auto cursor-pointer">
-                 <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
-                      xmlns="http://www.w3.org/2000/svg">
-                     <g stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                         <circle cx="12" cy="12" r="10"/>
-                         <path d="M2 12h20"/>
-                         <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z"/>
-                     </g>
-                 </svg>
-                </div>
-            </div>
+              <div class="ml-10 flex items-baseline space-x-8">
+                  @for(item of menuItems; track item.id){
+                      <a href="javascript:;" (click)="scrollToElement.emit(item.id)" [ngClass]="(isActivePage(item.id) ? 'nav-tab-active underline' : 'nav-tab-inactive')">
+                        {{item.name}}
+                      </a>
+                  }
+                  <div (click)="changeLang()" ngClass="text-primary-yellow inactive m-auto cursor-pointer">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                         xmlns="http://www.w3.org/2000/svg">
+                      <g stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="10"/>
+                        <path d="M2 12h20"/>
+                        <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10A15.3 15.3 0 0 1 12 2z"/>
+                      </g>
+                    </svg>
+                  </div>
+              </div>
             </div>
             <!--   Mobile menu button    -->
             <div class="md:hidden">

@@ -1,0 +1,27 @@
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+  <div class="text-center mb-16">
+    <h2 class="text-4xl md:text-5xl font-playfair font-bold text-olive-dark mb-6">
+      Health Care
+    </h2>
+    <p class="text-xl text-olive-medium max-w-3xl mx-auto">
+      {{'health.health-description' | translate}}
+    </p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+    @for(item of healthCardItems; track item){
+      <app-health-card [healthCard]="item"/>
+    }
+  </div>
+
+  <div class="mt-16 bg-white rounded-2xl p-8 shadow-lg">
+    <div class="text-center">
+      <h3 class="text-2xl font-playfair font-bold text-olive-dark mb-4">
+        Mediterranean Diet Approved
+      </h3>
+      <p class="text-olive-medium text-lg max-w-4xl mx-auto">
+        {{'health.health-footer' | translate}}
+      </p>
+    </div>
+  </div>
+</div>
