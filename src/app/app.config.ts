@@ -13,6 +13,8 @@ import {provideTranslateService, TranslateLoader, TranslateModule} from '@ngx-tr
 import {HttpClient, provideHttpClient} from '@angular/common/http';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {ConfigService} from './config/config.service';
+import {provideToastr} from 'ngx-toastr';
+import {provideAnimations} from '@angular/platform-browser/animations';
 
 const httpLoaderFactory: (http: HttpClient) => TranslateHttpLoader = (http: HttpClient) =>
   new TranslateHttpLoader(http, './i18n/', '.json');
@@ -23,6 +25,8 @@ providers: [
     provideStore(),
     provideState({ name: 'cart', reducer: cartReducer }),
     provideHttpClient(),
+    provideAnimations(),
+    provideToastr(),
     provideTranslateService({
       defaultLanguage: 'en',
     }),

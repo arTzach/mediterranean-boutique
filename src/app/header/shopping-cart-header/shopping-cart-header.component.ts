@@ -4,6 +4,7 @@ import {Store} from '@ngrx/store';
 import {selectCartCount, selectCartItems} from '../../store/cart.selector';
 import {AsyncPipe} from '@angular/common';
 import {take} from 'rxjs';
+import {ToastrService} from 'ngx-toastr';
 
 @Component({
   selector: 'app-shopping-cart-header',
@@ -12,12 +13,15 @@ import {take} from 'rxjs';
   styles: ``
 })
 export class ShoppingCartHeaderComponent{
-  store = inject(Store)
-  countCartItems = signal(1);
+  store = inject(Store);
+  toastrService = inject(ToastrService);
   cartItemsCount$ = this.store.select(selectCartCount);
   cartItems$ = this.store.select(selectCartItems);
 
   onClick(){
-     this.cartItems$.pipe(take(1)).subscribe(console.log)
+     this.cartItems$.pipe(take(1)).subscribe(data => {
+       this.toastrService.info(JSON.stringify(data));
+     })
+
   }
 }
