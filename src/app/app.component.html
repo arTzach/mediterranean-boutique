@@ -7,22 +7,22 @@
       (scrollToElement)="scrollToElement($event)"
     />
     <section id="home" class="relative min-h-screen flex items-center justify-center overflow-hidden">
-      <span id="home_obs" class="center"></span>
+      <span id="home_obs" class="h-full center"></span>
       <app-home/>
     </section>
-    <section id="olive-oil" class="flex items-center justify-center py-20 bg-cream">
-      <span id="olive-oil_obs" class="inline-block top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></span>
+    <section id="olive-oil" class="flex  min-h-screen items-center justify-center py-20 bg-cream">
+      <span id="olive-oil_obs" class="h-full inline-block top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></span>
       <app-lazy-host [component]="OliveOilComponent"></app-lazy-host>
     </section>
-    <section id="about-us" class="flex items-center justify-center py-20 bg-white">
-      <span id="about-us_obs" class="top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></span>
+    <section id="about-us" class="flex  min-h-screen items-center justify-center py-20 bg-white">
+      <span id="about-us_obs" class="h-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></span>
       <app-lazy-host [component]="AboutUsComponent"></app-lazy-host>
     </section>
-    <section id="health" class="flex items-center justify-center py-20 bg-cream-light/20">
-      <span id="health_obs" class="top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></span>
+    <section id="health" class="flex  min-h-screen items-center justify-center py-20 bg-cream-light/20">
+      <span id="health_obs" class="h-full top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></span>
       <app-lazy-host [component]="HealthComponent"></app-lazy-host>
     </section>
-    <section id="contact-us" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id="contact-us" class=" min-h-screen relative min-h-screen flex items-center justify-center overflow-hidden">
       <span id="contact-us_obs" class="top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></span>
       <app-contact-us/>
     </section>

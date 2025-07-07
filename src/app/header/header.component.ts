@@ -1,10 +1,11 @@
 import {Component, inject, input, output, signal} from '@angular/core';
 import {NgClass} from '@angular/common';
 import {TranslateService} from '@ngx-translate/core';
+import {ShoppingCartHeaderComponent} from './shopping-cart-header/shopping-cart-header.component';
 
 @Component({
   selector: 'app-header',
-  imports: [NgClass],
+  imports: [NgClass, ShoppingCartHeaderComponent],
   templateUrl: './header.component.html',
   styles: ``
 })

@@ -1,11 +1,18 @@
 <nav class="header-nav-bar backdrop-blur-sm fixed w-full z-50 bg-primary-green">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between items-center h-16">
+            <!--   Mobile menu button    -->
+            <div class="md:hidden">
+              <button (click)="toggleMenu()" class="text-primary-yellow focus:outline-none" aria-label="toggle menu button">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path [attr.d]="isOpen() ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
             <div class="flex-shrink-0">
-            <h1 class="text-2xl font-playfair font-bold text-primary-yellow">
-              Mediterranean Boutique
-            </h1>
-
+              <h1 class="md:text-2xl pl-2 font-bold text-primary-yellow justify-content-center">
+                Mediterranean Boutique
+              </h1>
             </div>
             <span class="flex md:hidden mx-auto">
                   <div (click)="changeLang()" ngClass="text-primary-yellow inactive m-auto cursor-pointer">
@@ -39,14 +46,7 @@
                   </div>
               </div>
             </div>
-            <!--   Mobile menu button    -->
-            <div class="md:hidden">
-                <button (click)="toggleMenu()" class="text-primary-yellow focus:outline-none" aria-label="toggle menu button">
-                    <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path [attr.d]="isOpen() ? 'M6 18L18 6M6 6l12 12' : 'M4 6h16M4 12h16M4 18h16'" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </button>
-            </div>
+            <app-shopping-cart-header/>
         </div>
         <!-- Mobile Menu -->
         @if(isOpen()){

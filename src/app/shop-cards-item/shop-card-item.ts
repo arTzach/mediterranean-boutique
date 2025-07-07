@@ -10,7 +10,7 @@ export interface ShopCardItem {
   imageSmUrl: string
 }
 
-export interface ShopCardState {
+export interface ShopCartStateItem {
   id: string,
   name: string,
   year: number,
@@ -18,4 +18,8 @@ export interface ShopCardState {
   quantity: number,
   info: string,
   status: string
+}
+
+export interface ShopCartState {
+  [id: string]: ShopCartStateItem;
 }

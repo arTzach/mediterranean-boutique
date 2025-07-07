@@ -8,7 +8,7 @@ import {
 
 
 import {provideState, provideStore} from '@ngrx/store';
-import {cartReducer} from './actions/cart.reducer';
+import {cartReducer} from './store/cart.reducer';
 import {provideTranslateService, TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {HttpClient, provideHttpClient} from '@angular/common/http';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';

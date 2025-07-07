@@ -34,7 +34,7 @@ export class AppComponent implements AfterViewInit {
             this.activeComponent = entry.target.id.split('_')[0];
           }
         });
-      }, { threshold: 1});
+      }, { threshold: 0.6});
       [
         'home_obs', 'olive-oil_obs', 'about-us_obs', 'health_obs', 'contact-us_obs',
       ].forEach(id => {

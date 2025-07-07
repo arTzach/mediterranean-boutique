@@ -2,7 +2,7 @@ import {Component, inject, input} from '@angular/core';
 import {ShopCardItem} from './shop-card-item';
 import {NgOptimizedImage} from '@angular/common';
 import {Store} from '@ngrx/store';
-import {CartActions} from '../actions/cart.actions';
+import {CartActions} from '../store/cart.actions';
 
 @Component({
   selector: 'app-shop-cards-item',
