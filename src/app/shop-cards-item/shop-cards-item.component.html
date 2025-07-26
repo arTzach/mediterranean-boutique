@@ -1,10 +1,10 @@
 <div class="group hover:shadow-xl transition-all duration-500 border-olive-green/30 overflow-hidden animate-scale-in">
-  <div class="aspect-square overflow-hidden">
+  <div class="overflow-hidden">
     <img ngSrc="{{item().imageUrl}}"
-         width="300"
-         height="400"
+         [height]="300"
+         [width]="300"
          alt="Early harvest oil bottle"
-         class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+         class="object-fit group-hover:scale-110 transition-transform duration-600 w-full h-180"
     />
   </div>
   <div class="p-6 bg-white">

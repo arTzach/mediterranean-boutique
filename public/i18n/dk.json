@@ -1,22 +1,16 @@
 {
   "title": "Middelhavsbutik",
-  "welcome": "Velkommen til Middelhavsbutikken",
+  "welcome": "Velkommen til Middelhavsbutik",
   "home": {
-    "p0": "Vi er en lille startup med en stor passion: at bringe den ægte smag af Middelhavet til dit bord.",
-    "p1": "Hos Middelhavsbutikken er hvert produkt håndplukket fra betroede producenter, der lægger kærlighed, omhu og tradition i alt, hvad de laver. Vi er lige startet – men vi gør det med hjertet, formål og en dyb tro på kvalitet.",
-    "p2": "Vi ønsker, at du opdager forskellen mellem det almindelige og det ekstraordinære. Den slags forskel, du kan smage, mærke og nyde godt af – i din krop, dit køkken og din hverdag.",
-    "p3": "Fremstillet med kærlighed. Udvalgt med omhu. Delt med dig."
+    "p0": "Vi er en lille startup med en simpel mission: at bringe middelhavskosten ind i dit hjem med sunde, håndplukkede og traditionelle produkter."
   },
   "about-us": {
-    "p0": "Middelhavsbutikken er en virksomhed startet af to unge mennesker, der bor i Danmark, men med dybe rødder i Middelhavet. Vi voksede begge op i små landsbyer i Grækenland, omgivet af familietraditioner, rene smage og en dyb respekt for kvalitet. Vi ved, hvor særlige disse produkter er – og hvor svære de er at finde uden for deres hjemland.",
-    "p1": "Efter at have boet i København i flere år, opstod idéen: Hvad nu hvis vi kunne dele den smag, kvalitet og de værdier, vi voksede op med – med mennesker, der virkelig værdsætter forskellen?",
-    "p2": "Det var sådan, Middelhavsbutikken blev født.",
-    "p3": "Vi brænder for at finde de fineste produkter, håndplukket fra producenter, der går op i deres håndværk. Vi taler direkte med dem, gennemgår deres processer, tjekker alle certificeringer og vælger kun det, vi tror på – uden kompromis.",
-    "p4": "Det handler ikke om masseproduktion. Det handler om meningsfuldt udvalg. Og mens vi vokser, forbliver vores mål det samme: at forbinde mennesker med ægte middelhavsprodukter, fulde af tradition, smag og hjerte."
+    "p0": "Vi er Andreas og Stefanos, to personer fra Grækenland, som bor og arbejder i Danmark. Vores rødder går tilbage til to små kystbyer — Gytheio og Aidipsos. Vi voksede op ved havet, med solen over os og måltider, der både var lækre og – som vi senere fandt ud af – utroligt sunde. En stor del af dette var olivenolie; en delikatesse, som altid var på vores bord — enten fra vores egen familieejendom eller fra en nabo — og dengang tænkte vi ikke videre over det. Det var bare en del af livet.",
+    "p1": "Først da vi flyttede til Danmark, indså vi, at det vi var vokset op med, ikke var så let at finde. De smage, vi tog for givet — god olivenolie, feta og andre produkter, som var i overflod derhjemme — manglede på de danske hylder. Vi ønskede at dele en smule af det, vi havde derhjemme, med folk der går op i, hvad de spiser. Derfor skabte vi Middelhavsbutik.",
+    "p2": "Vores mission er enkel: at bringe en smule af vores hjem til Danmark. Men vi vil gøre det på den rigtige måde — den måde vi har lært her i Danmark: den danske måde. Vi samarbejder med producenter, der værner om miljøet og følger bæredygtige, økologiske metoder, og bringer kun det bedste, Middelhavet har at byde på."
   },
   "health": {
-    "health-description": "Ekstra jomfru olivenolie er ikke bare lækker – det er en hjørnesten i den middelhavsdiæt, der videnskabeligt er bevist at støtte langvarig sundhed og velvære.",
-    "health-footer": "Vores ekstra jomfru olivenolie er en vigtig del af middelhavsdiæten, som er anerkendt af UNESCO som en del af menneskehedens immaterielle kulturarv og understøttet af årtiers ernæringsforskning."
-
+    "health-description": "Ekstra jomfruolivenolie er ikke kun lækker — det er en hjørnesten i middelhavskosten, videnskabeligt bevist at støtte langvarig sundhed og velvære.",
+    "health-footer": "Vores ekstra jomfruolivenolie er en vigtig del af middelhavskosten, anerkendt af UNESCO som immateriel kulturarv og støttet af årtiers ernæringsforskning."
   }
 }

@@ -2,17 +2,12 @@
   "title": "Mediterranean Boutique",
   "welcome": "Welcome to Mediterranean Boutique",
   "home": {
-    "p0": "We’re a small startup with a big passion: bringing the true taste of the Mediterranean to your table.",
-    "p1": "At Mediterranean Boutique, every product is hand-selected from trusted producers who pour love, care, and tradition into everything they make. We’re just starting out - but we’re doing it with heart, purpose, and a deep belief in quality.",
-    "p2": "We want you to discover the difference between ordinary and extraordinary. The kind of difference you can taste, feel, and benefit from - in your body, your kitchen, and your everyday life.",
-    "p3": "Crafted with love. Chosen with care. Shared with you."
+    "p0": "We are a small startup with a simple mission: to bring the Mediterranean diet into your home with healthy, hand-picked, and traditional products."
   },
   "about-us": {
-    "p0": "Mediterranean Boutique is a company started by two young people living in Denmark, but with deep roots in the Mediterranean. Both of us grew up in small villages in Greece, surrounded by family traditions, pure flavors, and a deep respect for quality. We know how special those products are - and how hard they are to find outside their homeland.",
-    "p1": "After living in Copenhagen for several years, the idea took root: What if we could share the taste, quality, and values we grew up with - with people who truly appreciate the difference?",
-    "p2": "That’s how Mediterranean Boutique was born.",
-    "p3": "We’re passionate about sourcing only the finest products, handpicked from producers who  care deeply about their craft. We speak to them directly, review their processes, check  every certification, and choose only what we believe in - no compromises.",
-    "p4": "This isn’t about mass production. It’s about meaningful selection. And as we grow, our goal stays the same: to connect people with real Mediterranean products, full of tradition, flavor, and heart."
+    "p0": "We are Andreas and Stefanos, two people from Greece living and working in Denmark. Our roots go back to two small coastal villages — Gytheio and Aidipsos. We grew up by the sea, with the sun always above us and meals that were both delicious and, as we later realized, incredibly healthy. A big factor to both of these was olive oil; a delicacy which was always present at our table — either from our own family farm or from a neighbor’s — and back then, we didn’t think twice about it. It was just a part of life.",
+    "p1": "It wasn’t until we moved to Denmark that we realized what we’d grown up with wasn’t so easy to find. The flavors we took for granted — good olive oil, feta and other products that were in abundance at home — were missing from Danish shelves. We wanted to share a little bit of what we had back home with people who care about what they eat. That’s why we created Mediterranean Boutique.",
+    "p2": "Our mission is simple: to bring a little bit of our home to Denmark. But we want to do it the right way — the way we've learned here in Denmark: the Danish way. We work with producers who care for the environment and follow sustainable, organic practices, bringing only the best the Mediterranean has to offer."
   },
   "health": {
     "health-description": "Extra virgin olive oil isn't just delicious—it's a cornerstone of the Mediterranean diet, scientifically proven to support long-term health and wellness.",

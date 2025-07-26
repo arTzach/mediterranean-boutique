@@ -3,7 +3,7 @@
 // For more information: https://material.angular.dev/guide/theming
 @use '@angular/material' as mat;
 @use "tailwindcss";
-@import 'ngx-toastr/toastr';
+@use 'ngx-toastr/toastr';
 html {
   @include mat.theme((
     color: (
