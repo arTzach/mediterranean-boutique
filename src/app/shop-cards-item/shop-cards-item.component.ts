@@ -3,6 +3,7 @@ import {ShopCardItem} from './shop-card-item';
 import {NgOptimizedImage} from '@angular/common';
 import {Store} from '@ngrx/store';
 import {CartActions} from '../store/cart.actions';
+import {ConfigService} from '../config/config.service';
 
 @Component({
   selector: 'app-shop-cards-item',
@@ -15,8 +16,9 @@ import {CartActions} from '../store/cart.actions';
 export class ShopCardsItemComponent {
   item = input.required<ShopCardItem>();
   isCartEnabled = input.required<boolean>();
-  private store = inject(Store);
+  #configService = inject(ConfigService);
   addToCart(id: string) {
-    this.store.dispatch(CartActions.addToCart({id}));
+    console.info(`AddToCart with id ${id}`);
+    window.location.href = this.#configService.get('shopUrl');
   }
 }

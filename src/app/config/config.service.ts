@@ -5,6 +5,7 @@ import {firstValueFrom, tap} from 'rxjs';
 export type Config = {
   languages: string[];
   defaultLanguage: string;
+  shopUrl: string;
 }
 type ConfigKey = keyof Config;
 @Injectable({

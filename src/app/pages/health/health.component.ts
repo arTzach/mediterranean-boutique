@@ -11,22 +11,22 @@ import {HealthCardComponent, HealthCardItem} from '../../health-card/health-card
 export class HealthComponent {
   healthCardItems: HealthCardItem[] = [
     {
-      icon: "icon1",
+      icon: "",
       title: "Heart Health",
       description: "Rich in monounsaturated fats that support cardiovascular health and help reduce bad cholesterol levels."
     },
     {
-      icon: "icon2",
+      icon: "",
       title: "Antioxidant Power",
       description: "Packed with vitamin E and polyphenols that fight inflammation and protect cells from oxidative stress."
     },
     {
-      icon: "icon3",
+      icon: "",
       title: "Brain Function",
       description: "Studies suggest olive oil consumption may support cognitive function and reduce age-related mental decline."
     },
     {
-      icon: "icon4",
+      icon: "",
       title: "Skin Health",
       description: "Natural moisturizing properties and vitamins help maintain healthy, radiant skin from the inside out."
     }

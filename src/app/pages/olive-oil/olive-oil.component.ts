@@ -14,12 +14,12 @@ export class OliveOilComponent {
     id: "item-001",
     name: "Extra Virgin Olive Oil",
     year: 2025,
-    price: "$29.99",
+    price: "",
     quantity: 12,
     info: "Early harvest, extra virgin olive oil.",
     status: "available",
-    imageUrl: "img/product.webp",
-    imageSmUrl: "img/product.webp"
+    imageUrl: "img/Medboutiquebottleshooting1303.jpg",
+    imageSmUrl: "img/Medboutiquebottleshooting1303.jpg"
   },
   ];
 }
